@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace CleanArchMvcWebUI.Controllers;
+namespace CleanArchMvc.WebUI.Controllers;
 public class ProductsController : Controller
 {
     private readonly IProductService _productService;

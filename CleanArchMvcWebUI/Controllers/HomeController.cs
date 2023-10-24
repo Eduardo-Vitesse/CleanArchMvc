@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchMvcWebUI.Controllers;
+namespace CleanArchMvc.WebUI.Controllers;
 
 public class HomeController : Controller
 {

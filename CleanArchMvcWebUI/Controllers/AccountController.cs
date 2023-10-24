@@ -1,8 +1,8 @@
 ﻿using CleanArchMvc.Domain.Account;
-using CleanArchMvcWebUI.ViewModels;
+using CleanArchMvc.WebUI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchMvcWebUI.Controllers;
+namespace CleanArchMvc.WebUI.Controllers;
 
 public class AccountController : Controller
 {

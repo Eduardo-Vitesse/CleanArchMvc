@@ -3,7 +3,7 @@ using CleanArchMvc.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchMvcWebUI.Controllers;
+namespace CleanArchMvc.WebUI.Controllers;
 
 [Authorize]
 public class CategoriesController : Controller

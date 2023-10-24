@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Infra.Data", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Infra.IoC", "CleanArchMvc.Infra.IoC\CleanArchMvc.Infra.IoC.csproj", "{E92487CE-C4E4-438E-82F5-A9EE33102E39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvcWebUI", "CleanArchMvcWebUI\CleanArchMvcWebUI.csproj", "{CB5576B0-87CD-4CDC-956C-F6B5452C5400}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.WebUI", "CleanArchMvcWebUI\CleanArchMvc.WebUI.csproj", "{CB5576B0-87CD-4CDC-956C-F6B5452C5400}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{C48F6865-CA1F-48C1-B93A-3A9DAC7FD34F}"
 EndProject

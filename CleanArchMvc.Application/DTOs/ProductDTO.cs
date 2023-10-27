@@ -13,13 +13,13 @@ public class ProductDTO
     [MinLength(3)]
     [MaxLength(100)]
     [DisplayName("Name")]
-    public string Name { get; set; }
+    public required string Name { get; set; }
 
     [Required(ErrorMessage = "The Description is Required")]
     [MinLength(5)]
     [MaxLength(200)]
     [DisplayName("Description")]
-    public string Description { get; set; }
+    public required string Description { get; set; }
 
     [Required(ErrorMessage = "The Price is Required")]
     [Column(TypeName = "decimal(18,2)")]
@@ -35,10 +35,10 @@ public class ProductDTO
 
     [MaxLength(250)]
     [DisplayName("Product Image")]
-    public string Image { get; set; }
+    public string? Image { get; set; }
 
     [JsonIgnore]
-    public Category Category { get; set; }
+    public required Category Category { get; set; }
 
     [DisplayName("Categories")]
     public int CategoryId { get; set; }

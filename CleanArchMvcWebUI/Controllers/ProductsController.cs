@@ -35,15 +35,15 @@ public class ProductsController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(ProductDTO productDto)
     {
-        //if (ModelState.IsValid)
-        //{
-        //    await _productService.Add(productDto);
-        //    return RedirectToAction(nameof(Index));
-        //}
-        //return View(productDto);
+        if (ModelState.IsValid)
+        {
+            await _productService.Add(productDto);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(productDto);
 
-        await _productService.Add(productDto);
-        return RedirectToAction(nameof(Index));
+        //await _productService.Add(productDto);
+        //return RedirectToAction(nameof(Index));
     }
 
     [Authorize(Roles = "Admin")]
@@ -63,15 +63,15 @@ public class ProductsController : Controller
     [HttpPost]
     public async Task<IActionResult> Edit(ProductDTO productDto)
     {
-        //if (ModelState.IsValid)
-        //{
-        //    await _productService.Update(productDto);
-        //    return RedirectToAction(nameof(Index));
-        //}
-        //return View(productDto);
+        if (ModelState.IsValid)
+        {
+            await _productService.Update(productDto);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(productDto);
 
-        await _productService.Update(productDto);
-        return RedirectToAction(nameof(Index));
+        //await _productService.Update(productDto);
+        //return RedirectToAction(nameof(Index));
     }
 
     [Authorize(Roles = "Admin")]

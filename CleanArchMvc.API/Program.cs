@@ -12,6 +12,9 @@ builder.Services.AddSwaggerGen();
 // Add services to the container.
 var configuration = builder.Configuration;
 builder.Services.AddInfrastructureAPI(configuration);
+builder.Services.AddInfrastructureJWT(configuration);
+builder.Services.AddInfrastructureSwagger();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,6 +26,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseStatusCodePages();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
